@@ -25,7 +25,8 @@ export class AcknowledgeComponent implements OnInit {
   }
 
   gotoDetails(studentId: any) {
-    this.router.navigateByUrl(studentId);
+//     this.router.navigateByUrl(studentId);
+    this.router.navigate(['/student/'+studentId]);
   }
 
   ngOnInit(): void {
